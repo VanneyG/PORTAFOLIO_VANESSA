@@ -1,0 +1,9 @@
+@mixin layout ($col,$col2 , $row){
+    grid-template-columns: $col  $col2;
+    grid-template-rows: $row;
+}
+
+@mixin layout_mobile ($col, $row){
+    grid-template-columns: $col ;
+    grid-template-rows: $row;
+}

@@ -1,0 +1,75 @@
+* {
+  background-color: pink;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header" "content";
+}
+body header {
+  grid-area: header;
+  width: 100%;
+}
+body header .nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.5rem;
+  padding-top: 65%;
+  padding-right: 10PX;
+  justify-self: end;
+}
+body header .nav-links a {
+  color: rgb(122, 15, 15);
+  text-decoration: none;
+  justify-items: center;
+}
+body header .burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
+body header .burger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(65, 65, 68);
+  transition: all 0.3s ease;
+}
+body #container {
+  background-color: antiquewhite;
+  grid-area: content;
+}
+
+@media (max-width: 1023px) {
+  body header .burger-menu {
+    display: flex;
+    justify-self: end;
+    position: fixed;
+    margin: 10PX;
+  }
+  body header .nav-links {
+    display: none;
+  }
+  #container {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  body header .nav-links {
+    position: fixed;
+  }
+  body {
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header content";
+  }
+}/*# sourceMappingURL=style.css.map */
