@@ -66,24 +66,73 @@ header{
 
 @media(max-width:1023px){
 
- body header .burger-menu {display:flex; justify-self: end ; position: fixed; margin: 10PX; }
-body header .nav-links {display:none; }
- #container{margin-top: 40px; }
+ body header {
+    .burger-menu {display:flex !important; justify-self: end ; position: fixed;  margin: 10PX;
 
-}
-
-
-@media (min-width:1024px ){
-     body header .nav-links {position: fixed;}
-    body{
-     
-        @include partial.layout( 1fr , 5fr, auto);
-        grid-template-areas: "header content";
-        
+      top: 15px;    
+      right: 15px;
+      z-index: 1000; /* Aseguramos que se mantenga en la capa superior */
+      margin: 0;   
     }
 
-  
+    .nav-links {
+      display: none !important; /* Ocultamos la lista nativa de escritorio */
+    }
+  }
+
+  /* REGLA CRÍTICA: Declarar de forma externa para romper problemas de especificidad */
+  #dynamic-burger-menu {
+    display: flex !important;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5rem;
+    
+    // Posicionamiento absoluto flotante en pantalla móvil
+    position: fixed !important;
+    top: 55px; /* Colocado estratégicamente debajo del botón burger */
+    right: 15px;
+    z-index: 999; /* Justo debajo del botón en el eje Z */
+    
+    // Estilos de contraste obligatorio para combatir el background general pink
+    background-color: #ffffff !important; /* Fondo blanco para ver el contenido claramente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    min-width: 150px;
+
+    li {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      color: #7a0f0f !important; /* Forzamos el color rojo oscuro de tus enlaces */
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+    }
+  }
+
+  #container {
+    margin-top: 40px; 
+  }
 }
 
+@media (min-width:1024px) {
+  body header .nav-links {
+    display: flex !important;
+    position: fixed;
+    padding-top: 65%;
+  }
+  
+  #dynamic-burger-menu {
+    display: none !important; /* Destruye visibilidad si pasamos a escritorio */
+  }
+
+  body {
+    @include partial.layout(1fr, 5fr, auto);
+    grid-template-areas: "header content";
+  }
+}
 
 
