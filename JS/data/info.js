@@ -1,5 +1,5 @@
 
-// info.js
+// burger menu
 export function setupDynamicBurgerMenu() {
     const burgerBtn = document.getElementById('burger-btn');
     const originalNavLinks = document.querySelector('.nav-links');
@@ -26,5 +26,14 @@ export function setupDynamicBurgerMenu() {
         }
     });
 }
+
+
+
+
+
+
+
+
+
 
 

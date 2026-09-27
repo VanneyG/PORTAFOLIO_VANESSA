@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {
-  background-color: pink;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,19 +15,28 @@ body header {
   grid-area: header;
   width: 100%;
 }
+body header .logo {
+  padding-left: 15px;
+  padding-top: 8px;
+  width: auto;
+  height: 50px;
+}
 body header .nav-links {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 1.5rem;
-  padding-top: 65%;
-  padding-right: 10PX;
-  justify-self: end;
+  gap: 15px;
+  justify-self: center;
+  padding-right: 35px;
+  align-items: start;
 }
 body header .nav-links a {
-  color: rgb(122, 15, 15);
+  color: black;
   text-decoration: none;
-  justify-items: center;
+  justify-items: start;
+  font-family: "Cormorant-Infant";
+  font-size: 18px;
+  font-weight: 600;
 }
 body header .burger-menu {
   display: none;
@@ -38,6 +46,7 @@ body header .burger-menu {
   border: none;
   cursor: pointer;
   padding-right: 10px;
+  padding-top: 2.5%;
 }
 body header .burger-menu .bar {
   width: 25px;
@@ -46,8 +55,46 @@ body header .burger-menu .bar {
   transition: all 0.3s ease;
 }
 body #container {
-  background-color: antiquewhite;
+  background-color: #FFFDFA;
   grid-area: content;
+}
+body #container #container_color {
+  position: relative; /* Contenedor de referencia para la lista absoluta */
+  display: block; /* Asegura que tome el flujo correcto en tu layout */
+}
+body #container #container_color .logo_color {
+  width: auto;
+  height: 40px;
+  margin-left: 75%;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block; /* Evita espacios extra debajo de las imágenes */
+}
+body #container #container_color .color-menu-list {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  top: 65px; /* Ajusta la altura relativa sumando margin-top + alto de la imagen */
+  left: 85%; /* Se alinea horizontalmente con el inicio de la imagen */
+  list-style: none;
+  padding: 6px;
+  margin: 0;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000; /* Se posiciona por encima del resto del contenido */
+}
+body #container #container_color .color-menu-list.active {
+  display: flex;
+}
+body #container #container_color .color-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+body #container #container_color .color-btn:hover {
+  transform: scale(1.15);
 }
 
 @media (max-width: 1023px) {
@@ -74,7 +121,7 @@ body #container {
     top: 55px; /* Colocado estratégicamente debajo del botón burger */
     right: 15px;
     z-index: 999; /* Justo debajo del botón en el eje Z */
-    background-color: #ffffff !important; /* Fondo blanco para ver el contenido claramente */
+    background-color: #FFF9F0 !important; /* Fondo blanco para ver el contenido claramente */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
@@ -85,27 +132,37 @@ body #container {
     width: 100%;
   }
   #dynamic-burger-menu a {
-    color: #7a0f0f !important; /* Forzamos el color rojo oscuro de tus enlaces */
+    color: #0a0a0a !important; /* Forzamos el color rojo oscuro de tus enlaces */
     text-decoration: none;
     font-weight: bold;
     display: block;
   }
   #container {
-    margin-top: 40px;
+    margin-top: 15px;
   }
 }
 @media (min-width: 1024px) {
+  body {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header content";
+  }
   body header .nav-links {
     display: flex !important;
     position: fixed;
-    padding-top: 65%;
+    padding-top: 25%;
   }
-  #dynamic-burger-menu {
+  body header #dynamic-burger-menu {
     display: none !important; /* Destruye visibilidad si pasamos a escritorio */
   }
-  body {
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: auto;
-    grid-template-areas: "header content";
+  body header .logo {
+    width: auto;
+    height: 70px;
+    padding-left: 20%;
+    padding-top: 20px;
+  }
+  body #container #container_color .logo_color {
+    margin-left: 85%;
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
