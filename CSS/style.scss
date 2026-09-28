@@ -44,6 +44,22 @@ header{
   font-size: 18px;
   font-weight: 600;
 }
+
+.li_nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   
+    
+
+    .Links_icons{
+         @include partial.image-size(auto, 45px);
+         padding-top: 27px;
+         margin-right: 10px;
+
+        
+    }
+}
 }
 
 
@@ -147,6 +163,11 @@ header{
 
     .nav-links {
       display: none !important; /* Ocultamos la lista nativa de escritorio */
+      
+
+
+
+
     }
   }
 

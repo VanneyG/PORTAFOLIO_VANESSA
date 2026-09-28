@@ -39,6 +39,17 @@ body header .nav-links a {
   font-size: 18px;
   font-weight: 600;
 }
+body header .nav-links .li_nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+body header .nav-links .li_nav .Links_icons {
+  width: auto;
+  height: 45px;
+  padding-top: 27px;
+  margin-right: 10px;
+}
 body header .burger-menu {
   display: none;
   flex-direction: column;
