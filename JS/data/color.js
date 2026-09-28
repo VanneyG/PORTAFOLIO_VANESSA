@@ -7,6 +7,9 @@ export class ColorMenu {
         { backgroundcolor: '#8D8A8C', contain_color: '#A6A0A4' }  // Tono gris
     ];
 
+    // Variable para guardar el color actual activo (empezamos con el primero por defecto)
+    #activeBgColor = '#FFF9F0';
+
     constructor(selector) {
         this.selector = selector; //logo_color is the name of the img
     }
@@ -18,7 +21,7 @@ export class ColorMenu {
 
         // Creamos la lista (ul) para los botones
         const listColor = document.createElement('ul');
-        listColor.classList.add('color-menu-list'); // giving a nameto ul
+        listColor.classList.add('color-menu-list'); // giving a name to ul
 
         this.#colors.forEach(colorPair => {
             const listItem = document.createElement('li');
@@ -26,18 +29,48 @@ export class ColorMenu {
 
             // Estilos directos para pintar el círculo con su respectivo background
             btnBg.style.backgroundColor = colorPair.backgroundcolor;
-            btnBg.classList.add('color-btn');
+            btnBg.classList.add('color-btn'); // llamando la clase del botton color-btn
+
+
+
+            // Guardamos el color directamente en el elemento como un atributo personalizado
+            btnBg.dataset.color = colorPair.backgroundcolor;
+
 
             // Evento click para cambiar los colores de la página y la sección
             btnBg.addEventListener('click', (event) => {
                 event.stopPropagation(); // Evita que se cierre inmediatamente el menú
-                this.#applyColors(colorPair.backgroundcolor, colorPair.contain_color);
+
+                // 1. Actualizamos el color activo guardado
+                this.#activeBgColor = colorPair.backgroundcolor;
+
+                this.#applyColors(colorPair.backgroundcolor, colorPair.contain_color); // function created 
+
+
+
+                // 3. Ocultamos el botón actual y mostramos los demás
+                this.#updateButtonVisibility(listColor);
+
+
                 listColor.classList.remove('active'); // Oculta el menú tras seleccionar
             });
 
-            listItem.append(btnBg);
-            listColor.append(listItem);
+
+
+            listItem.append(btnBg); // botones se anaden a la lista (li)
+
+
+            listColor.append(listItem); // las li se anaden al UL
         });
+
+
+
+        // Ejecutar al inicio para ocultar el botón por defecto
+        this.#updateButtonVisibility(listColor);
+        triggerElement.parentNode.insertBefore(listColor, triggerElement.nextSibling);
+
+
+
 
         // Coloca la lista 'ul' justo debajo de la imagen, dentro de <section id="container_color">
         triggerElement.insertAdjacentElement('afterend', listColor);
@@ -54,19 +87,36 @@ export class ColorMenu {
         });
     }
 
+
+    // Nueva función encargada de evaluar y ocultar el botón correspondiente
+    #updateButtonVisibility(listElement) {
+        // Buscamos todos los botones dentro de la lista
+        const buttons = listElement.querySelectorAll('.color-btn');
+
+        buttons.forEach(btn => {
+            // Comparamos usando el color guardado en formato Hex
+            if (btn.dataset.color === this.#activeBgColor) {
+                btn.style.display = 'none'; // Oculta el botón actual
+            } else {
+                btn.style.display = 'inline-block'; // Muestra los demás botones
+            }
+        });
+    }
+
+
     // Método privado para aplicar los cambios de color de fondo
     #applyColors(bgColor, containerColor) {
         // Cambia el color de fondo de toda la página
         document.body.style.backgroundColor = bgColor;
 
-
-
-
-
         // Cambia el color de fondo del contenedor según tu nueva estructura HTML
         const sectionContainer = document.querySelector('#container'); // creo que aqui deberia ser #container.
         if (sectionContainer) {
             sectionContainer.style.backgroundColor = containerColor;
+
+
+
+
         }
     }
 }
