@@ -16,41 +16,41 @@ body header {
   grid-area: header;
   width: 100%;
 }
-body header .logo {
-  padding-left: 15px;
-  padding-top: 8px;
+body header .logo_section {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+body header .logo_section .logo {
+  position: fixed;
   width: auto;
   height: 50px;
 }
-body header .nav-links {
+body header .navbar {
+  min-height: 85px;
+}
+body header .navbar .nav-links {
   display: flex;
   flex-direction: column;
-  list-style: none;
-  gap: 15px;
-  justify-self: center;
-  padding-right: 35px;
-  align-items: start;
+  margin-left: 20px;
 }
-body header .nav-links a {
+body header .navbar .nav-links .li_nav {
+  list-style: none;
+}
+body header .navbar .nav-links .li_nav a {
   color: black;
   text-decoration: none;
   justify-items: start;
   font-family: "Cormorant-Infant";
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 600;
 }
-body header .nav-links .li_nav {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-body header .nav-links .li_nav .Links_icons {
+body header .navbar .nav-links .li_nav .Links_icons {
   width: auto;
-  height: 45px;
-  padding-top: 27px;
+  height: 50px;
+  margin-top: 15%;
   margin-right: 10px;
 }
-body header .burger-menu {
+body header .navbar .burger-menu {
   display: none;
   flex-direction: column;
   gap: 5px;
@@ -60,7 +60,7 @@ body header .burger-menu {
   padding-right: 10px;
   padding-top: 2.5%;
 }
-body header .burger-menu .bar {
+body header .navbar .burger-menu .bar {
   width: 25px;
   height: 3px;
   background-color: rgb(65, 65, 68);
@@ -69,6 +69,19 @@ body header .burger-menu .bar {
 body #container {
   background-color: #FFFDFA;
   grid-area: content;
+  position: relative;
+}
+body #container .black_circle {
+  width: auto;
+  height: 30px;
+  position: absolute;
+  left: 37%;
+}
+body #container .orange_circle {
+  width: auto;
+  height: 50px;
+  position: absolute;
+  right: 0%;
 }
 body #container #container_color {
   position: relative; /* Contenedor de referencia para la lista absoluta */
@@ -108,7 +121,51 @@ body #container #container_color .color-btn {
 body #container #container_color .color-btn:hover {
   transform: scale(1.15);
 }
+body #container .indhold {
+  display: flex;
+  flex-direction: column;
+}
+body #container .indhold .text {
+  margin-left: 5%;
+  margin-top: 4%;
+  font-family: "outfit";
+  font-size: 35px;
+}
+body #container .indhold .text .hello, body #container .indhold .text .name {
+  font-family: "Cormorant-Upright";
+  font-style: italic;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+body #container .indhold .text .name, body #container .indhold .text .uddannelse {
+  color: #003399;
+}
+body #container .indhold .text .introduction {
+  margin-top: 18px;
+  font-weight: 500;
+}
+body #container .indhold .text .uddannelse {
+  font-size: 32px;
+  font-style: normal;
+  margin-bottom: 19px;
+  text-align: center;
+}
+body #container .indhold .text .bttn-about {
+  background-color: #003399;
+  color: white;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+body #container .indhold .profile_picture #profile_photo {
+  width: auto;
+  height: 280px;
+  margin-top: 20px;
+}
 
+/* media Queries */
 @media (max-width: 1023px) {
   body header .burger-menu {
     display: flex !important;
@@ -152,11 +209,27 @@ body #container #container_color .color-btn:hover {
   #container {
     margin-top: 15px;
   }
+  #container .profile_picture {
+    text-align: center;
+  }
+  #container .text2 {
+    display: block;
+    text-align: center;
+  }
+  #container .text2 .bttn-about {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
 }
 @media (min-width: 1024px) {
   body {
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1200px;
     grid-template-areas: "header content";
   }
   body header .nav-links {
@@ -164,17 +237,41 @@ body #container #container_color .color-btn:hover {
     position: fixed;
     padding-top: 25%;
   }
+  body header .nav-links a {
+    font-size: 30px;
+  }
   body header #dynamic-burger-menu {
     display: none !important; /* Destruye visibilidad si pasamos a escritorio */
   }
-  body header .logo {
+  body header .logo_section {
+    margin-top: 15px;
+    margin-left: 17px;
+  }
+  body header .logo_section .logo {
     width: auto;
     height: 70px;
-    padding-left: 20%;
-    padding-top: 20px;
   }
   body #container #container_color .logo_color {
     margin-left: 85%;
     margin-top: 50px;
+  }
+  body #container .indhold {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+    align-content: center;
+    height: 100%;
+    margin-top: 8%;
+  }
+  body #container .indhold .profile_picture {
+    flex-basis: 60%;
+  }
+  body #container .indhold .profile_picture #profile_photo {
+    width: auto;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

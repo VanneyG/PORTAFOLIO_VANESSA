@@ -14,47 +14,50 @@ body {
 header{
     grid-area: header;
      width:100%;
-    
+  .logo_section{ 
+  margin-top: 15px;
+  margin-left: 15px;
+   
   .logo{
    
-    padding-left: 15px;
-    padding-top: 8px;
+   
+   position:fixed;
 
     @include partial.image-size(auto,50px);
   } 
+
+  } 
+
+  .navbar {
+    min-height: 85px;
+
 .nav-links {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 15px;
-  
- 
+display: flex;
+flex-direction: column;
   // padding-top: 55% ;
   
-  justify-self: center;
-  padding-right: 35px;
- align-items: start;
+  margin-left: 20px;
 
-  a {
+
+
+.li_nav{
+    
+    
+    list-style: none;
+   
+      a {
   color: black;
   text-decoration: none;
   justify-items: start;
  
   font-family: 'Cormorant-Infant';
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 600;
 }
 
-.li_nav{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-   
-    
-
     .Links_icons{
-         @include partial.image-size(auto, 45px);
-         padding-top: 27px;
+         @include partial.image-size(auto, 50px);
+         margin-top: 15%;
          margin-right: 10px;
 
         
@@ -84,6 +87,7 @@ header{
   }
 }
 
+}
 
 }
 
@@ -92,6 +96,19 @@ header{
 #container {
   background-color: #FFFDFA;
   grid-area: content; 
+  position: relative;
+
+  .black_circle{
+     @include partial.image-size(auto, 30px);
+     position: absolute;
+     left: 37%;
+  }
+
+   .orange_circle{
+     @include partial.image-size(auto, 50px);
+     position: absolute;
+     right:0%;
+  }
 
   #container_color {
     position: relative; /* Contenedor de referencia para la lista absoluta */
@@ -140,6 +157,51 @@ header{
     }
 
   } 
+
+  .indhold{
+    display:flex;
+    flex-direction: column;
+
+
+
+    .text{
+        margin-left: 5% ;
+        margin-top: 4%;
+        font-family: 'outfit';
+        font-size: 35px;
+        .hello , .name{ font-family: 'Cormorant-Upright';
+            font-style: italic; font-size: 27px; margin-bottom: 10px; }
+        .name,  .uddannelse{color:#003399;}
+        .introduction{margin-top: 18px; font-weight: 500;}
+        .uddannelse{
+            font-size: 32px;
+            font-style: normal;
+            margin-bottom: 19px;
+            text-align: center;
+        }
+
+        .bttn-about{
+            background-color:#003399 ;
+            color: white;
+            text-align: center;
+            padding: 10px  30px 10px 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    } 
+
+ .profile_picture{
+   
+        #profile_photo{
+             @include partial.image-size(auto, 280px);
+             margin-top: 20px;
+           
+        }
+    } 
+
+  
+  }
 }
 
 }
@@ -148,7 +210,7 @@ header{
 
 
 
-//QUERIES -----------------------------------------------------------------------------------------
+/* media Queries */
 
 @media(max-width:1023px){
 
@@ -164,11 +226,8 @@ header{
     .nav-links {
       display: none !important; /* Ocultamos la lista nativa de escritorio */
       
-
-
-
-
     }
+
   }
 
   /* REGLA CRÍTICA: Declarar de forma externa para romper problemas de especificidad */
@@ -207,6 +266,26 @@ header{
   #container {
    
     margin-top: 15px; 
+    .profile_picture{
+        text-align: center;
+    }
+
+.text2{ 
+    display: block;
+ text-align: center;
+     .bttn-about{
+        
+            background-color:#003399 ;
+            color: white;
+            text-align: center;
+        
+            padding: 10px  30px 10px 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        }
+ 
   }
 }
 
@@ -216,7 +295,7 @@ header{
 @media (min-width:1024px) {
   body  {
 
-    @include partial.layout(1fr, 4fr, auto);
+    @include partial.layout(1fr, 4fr, 1200px);
     grid-template-areas: "header content";
 
     header {
@@ -224,19 +303,34 @@ header{
     display: flex !important;
     position: fixed;
     padding-top: 25%;
+
+    a{
+        font-size: 30px;
+    }
   }
   
   #dynamic-burger-menu {
     display: none !important; /* Destruye visibilidad si pasamos a escritorio */
   }
 
-  .logo{
-      @include partial.image-size(auto,70px);
-    
-    padding-left: 20%;
-    padding-top: 20px;
 
-  }
+
+.logo_section{ 
+  margin-top: 15px;
+  margin-left: 17px;
+   
+  .logo{
+   
+   
+     @include partial.image-size(auto,70px);
+    
+    
+  } 
+
+  } 
+
+
+  
 
  } 
 
@@ -250,10 +344,34 @@ header{
          margin-left: 85% ;
          margin-top: 50px;
        
-         
-       } 
-       
-       }
+          } 
+        }
+
+    .indhold{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+    align-content: center;
+    height: 100%;
+   
+    margin-top: 8%;
+
+ 
+
+ .profile_picture{
+    flex-basis: 60%;
+        #profile_photo{
+             @include partial.image-size(auto, 500px);
+             margin-top: 20px;
+             margin-left: 25px;
+             margin-right: 18px;
+           
+        }
+    } 
+
+   
+  }
 
 }
 
