@@ -312,6 +312,11 @@ flex-direction: column;
 
   #container {
    
+    .pink_circle{ display: none;
+
+  }
+
+
     margin-top: 15px; 
     .profile_picture{
         text-align: center;
@@ -385,7 +390,7 @@ flex-direction: column;
 
 
  #container{
-   
+   position: relative;
 height: 100%;
     .scroll-btn{
         display: none;
@@ -468,6 +473,13 @@ height: 100%;
    .orange_circle{
      @include partial.image-size(auto, 170px);
     
+  }
+
+  .pink_circle{ position:absolute;
+    top:80%;
+    left:50%;
+    @include partial.image-size(auto, 450px);
+
   }
 
 }

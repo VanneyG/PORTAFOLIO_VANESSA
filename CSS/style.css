@@ -257,6 +257,9 @@ body #container .indhold .profile_picture #profile_photo {
     font-weight: bold;
     display: block;
   }
+  #container .pink_circle {
+    display: none;
+  }
   #container {
     margin-top: 15px;
   }
@@ -310,6 +313,7 @@ body #container .indhold .profile_picture #profile_photo {
     top: 90%;
   }
   body #container {
+    position: relative;
     height: 100%;
   }
   body #container .scroll-btn {
@@ -389,5 +393,12 @@ body #container .indhold .profile_picture #profile_photo {
   body #container .orange_circle {
     width: auto;
     height: 170px;
+  }
+  body #container .pink_circle {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: auto;
+    height: 450px;
   }
 }/*# sourceMappingURL=style.css.map */
