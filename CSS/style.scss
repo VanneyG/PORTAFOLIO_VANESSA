@@ -41,7 +41,8 @@ flex-direction: column;
   // padding-top: 55% ;
   
   margin-left: 20px;
-
+align-content: center;
+justify-items:space-around;
 
 
 .li_nav{
@@ -52,17 +53,18 @@ flex-direction: column;
       a {
   color: black;
   text-decoration: none;
-  justify-items: start;
- 
+
   font-family: 'Cormorant-Infant';
   font-size: 23px;
   font-weight: 600;
+ 
 }
 
     .Links_icons{
          @include partial.image-size(auto, 50px);
          margin-top: 15%;
          margin-right: 10px;
+        
 
         
     }
