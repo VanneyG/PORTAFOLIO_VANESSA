@@ -9,6 +9,7 @@ body {
         grid-template-areas: "header" "content";
 scroll-behavior: smooth;
 
+
 // Navigation ---------------------------------------------------------------------
 
 header{
@@ -97,7 +98,7 @@ flex-direction: column;
 #container {
   background-color: #FFFDFA;
   grid-area: content; 
-  position: relative;
+ position: relative;
   
 /*-----------------------*/
  .scroll-btn {
@@ -476,9 +477,9 @@ height: 100%;
   }
 
   .pink_circle{ position:absolute;
-    top:80%;
-    left:50%;
-    @include partial.image-size(auto, 450px);
+    top:83%;
+    left:70%;
+    @include partial.image-size(auto, 200px);
 
   }
 
