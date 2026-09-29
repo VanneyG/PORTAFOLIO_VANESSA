@@ -91,8 +91,6 @@ flex-direction: column;
 
 }
 
-
-
 #container {
   background-color: #FFFDFA;
   grid-area: content; 
@@ -105,7 +103,7 @@ flex-direction: column;
   }
 
    .orange_circle{
-     @include partial.image-size(auto, 50px);
+     @include partial.image-size(auto, 75px);
      position: absolute;
      right:0%;
   }
@@ -117,8 +115,8 @@ flex-direction: column;
 
     .logo_color {
       @include partial.image-size(auto, 40px);
-      margin-left: 75%;
-      margin-top: 20px;
+      margin-left: 80%;
+      margin-top: 50px;
       cursor: pointer;
       
       display: block; /* Evita espacios extra debajo de las imágenes */
@@ -162,17 +160,24 @@ flex-direction: column;
     display:flex;
     flex-direction: column;
 
-
+    .text2{
+      .description{
+        font-size: 18px; font-family: 'outfit'; text-align: center;
+        margin-left: 5px;margin-right: 5px;
+      }  
+    }
 
     .text{
-        margin-left: 5% ;
+       margin-left: 5% ;
         margin-top: 4%;
-        font-family: 'outfit';
-        font-size: 35px;
+        font-family: 'outfit'; 
+       
+       
         .hello , .name{ font-family: 'Cormorant-Upright';
             font-style: italic; font-size: 27px; margin-bottom: 10px; }
         .name,  .uddannelse{color:#003399;}
-        .introduction{margin-top: 18px; font-weight: 500;}
+        .introduction{ margin-top: 25px; font-weight: 500; font-size: 22px; font-family: 'Cormorant-Upright'; margin-left: 10px;}
+        .description{font-size: 20px; text-align: center; font-family:'outfit';}
         .uddannelse{
             font-size: 32px;
             font-style: normal;
@@ -188,6 +193,8 @@ flex-direction: column;
             border-radius: 10px;
             font-size: 20px;
             margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     } 
 
@@ -328,10 +335,7 @@ flex-direction: column;
   } 
 
   } 
-
-
-  
-
+ 
  } 
 
 
@@ -371,6 +375,16 @@ flex-direction: column;
     } 
 
    
+  }
+
+ .black_circle{
+     @include partial.image-size(auto, 80px);
+    
+  }
+
+   .orange_circle{
+     @include partial.image-size(auto, 170px);
+    
   }
 
 }

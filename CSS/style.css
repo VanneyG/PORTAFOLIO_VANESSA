@@ -79,7 +79,7 @@ body #container .black_circle {
 }
 body #container .orange_circle {
   width: auto;
-  height: 50px;
+  height: 75px;
   position: absolute;
   right: 0%;
 }
@@ -90,8 +90,8 @@ body #container #container_color {
 body #container #container_color .logo_color {
   width: auto;
   height: 40px;
-  margin-left: 75%;
-  margin-top: 20px;
+  margin-left: 80%;
+  margin-top: 50px;
   cursor: pointer;
   display: block; /* Evita espacios extra debajo de las imágenes */
 }
@@ -125,11 +125,17 @@ body #container .indhold {
   display: flex;
   flex-direction: column;
 }
+body #container .indhold .text2 .description {
+  font-size: 18px;
+  font-family: "outfit";
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 body #container .indhold .text {
   margin-left: 5%;
   margin-top: 4%;
   font-family: "outfit";
-  font-size: 35px;
 }
 body #container .indhold .text .hello, body #container .indhold .text .name {
   font-family: "Cormorant-Upright";
@@ -141,8 +147,16 @@ body #container .indhold .text .name, body #container .indhold .text .uddannelse
   color: #003399;
 }
 body #container .indhold .text .introduction {
-  margin-top: 18px;
+  margin-top: 25px;
   font-weight: 500;
+  font-size: 22px;
+  font-family: "Cormorant-Upright";
+  margin-left: 10px;
+}
+body #container .indhold .text .description {
+  font-size: 20px;
+  text-align: center;
+  font-family: "outfit";
 }
 body #container .indhold .text .uddannelse {
   font-size: 32px;
@@ -158,6 +172,8 @@ body #container .indhold .text .bttn-about {
   border-radius: 10px;
   font-size: 20px;
   margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 body #container .indhold .profile_picture #profile_photo {
   width: auto;
@@ -273,5 +289,13 @@ body #container .indhold .profile_picture #profile_photo {
     margin-top: 20px;
     margin-left: 25px;
     margin-right: 18px;
+  }
+  body #container .black_circle {
+    width: auto;
+    height: 80px;
+  }
+  body #container .orange_circle {
+    width: auto;
+    height: 170px;
   }
 }/*# sourceMappingURL=style.css.map */

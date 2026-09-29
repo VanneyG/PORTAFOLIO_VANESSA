@@ -20,7 +20,7 @@ export class indhold {
                   <p class="name"><b>Vanessa G.Neyra </b></p>
                   <p class="introduction"><b>I'm a </b></p>
                   <p class="uddannelse"><b>Graphic Designer </b></p>
-                  <p>I’m a web designer, excited about creating graphic design, website design , and many more...</p>
+                  <p class="description">I’m a web designer, excited about creating graphic design, website design , and many more...</p>
                   <input type="button" value="More about me ->" class="bttn-about">
                 </div>
 
@@ -42,7 +42,7 @@ export class indhold {
                 </div>
                 
                 <div class="text2">
-                  <p>I’m a web designer, excited about creating graphic design, website design , and many more...</p>
+                  <p class="description">I’m a web designer, excited about creating graphic design, website design , and many more...</p>
                   <input type="button" value="More about me ->" class="bttn-about">
                 </div>
             `;
