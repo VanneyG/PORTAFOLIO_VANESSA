@@ -96,6 +96,14 @@ flex-direction: column;
   grid-area: content; 
   position: relative;
 
+   .scroll_icon{
+    text-align: center;
+    .scroll_image{
+        margin-top: 18px;
+         @include partial.image-size(auto, 80px);
+        
+    }
+   }
   .black_circle{
      @include partial.image-size(auto, 30px);
      position: absolute;

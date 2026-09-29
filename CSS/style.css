@@ -71,6 +71,14 @@ body #container {
   grid-area: content;
   position: relative;
 }
+body #container .scroll_icon {
+  text-align: center;
+}
+body #container .scroll_icon .scroll_image {
+  margin-top: 18px;
+  width: auto;
+  height: 80px;
+}
 body #container .black_circle {
   width: auto;
   height: 30px;
