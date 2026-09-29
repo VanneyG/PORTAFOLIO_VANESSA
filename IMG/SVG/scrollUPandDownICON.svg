@@ -1,163 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010.36621 746.20001">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700.8 737.6">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
   <defs>
     <style>
-      .cls-1 {
-        font-size: 82.53175px;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23 {
-        stroke: #000;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-13, .cls-14, .cls-15, .cls-24, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23 {
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st30, .st31, .st32, .st33, .st34 {
         isolation: isolate;
       }
 
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23 {
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st30, .st31, .st32, .st33, .st34 {
         font-family: Outfit-Medium, Outfit;
         font-weight: 500;
       }
 
-      .cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-23 {
-        stroke-miterlimit: 10;
+      .st0, .st6 {
+        font-size: 88.7px;
       }
 
-      .cls-1, .cls-3, .cls-18, .cls-19 {
-        fill: #fc6;
+      .st0, .st7, .st10, .st15, .st18, .st22, .st29 {
+        fill: #f499c1;
       }
 
-      .cls-2 {
-        font-size: 83.10939px;
-      }
-
-      .cls-2, .cls-25, .cls-22 {
+      .st1, .st2, .st3, .st5, .st6, .st9, .st35, .st11, .st16, .st19, .st20, .st21, .st23, .st25, .st30, .st31, .st32, .st33 {
         fill: none;
       }
 
-      .cls-3 {
-        font-size: 81.25735px;
+      .st1, .st2, .st3, .st5, .st6, .st9, .st11, .st16, .st19, .st20, .st21, .st23, .st25, .st36, .st30, .st31, .st32, .st33 {
+        stroke: #010101;
       }
 
-      .cls-4 {
-        font-size: 83.12067px;
-        letter-spacing: -.008em;
+      .st1, .st2, .st3, .st5, .st6, .st9, .st16, .st19, .st20, .st21, .st23, .st25, .st36, .st31, .st32, .st33 {
+        stroke-miterlimit: 10;
       }
 
-      .cls-4, .cls-9, .cls-16, .cls-17, .cls-20 {
-        fill: #f93;
+      .st1, .st8 {
+        font-size: 88.2px;
       }
 
-      .cls-5 {
-        font-size: 64.72581px;
+      .st2, .st22 {
+        font-size: 91px;
+        letter-spacing: 0em;
       }
 
-      .cls-6 {
-        font-size: 83.2981px;
+      .st3, .st12 {
+        font-size: 89.3px;
       }
 
-      .cls-7 {
-        font-size: 82.24171px;
-        letter-spacing: -.01799em;
+      .st4 {
+        fill: #010101;
       }
 
-      .cls-7, .cls-8, .cls-11, .cls-13, .cls-14, .cls-15, .cls-23 {
-        fill: #f9c;
+      .st4, .st25 {
+        font-size: 68.9px;
       }
 
-      .cls-8 {
-        font-size: 82.88126px;
+      .st5, .st27 {
+        font-size: 90.1px;
       }
 
-      .cls-9 {
-        font-size: 82.36243px;
-        letter-spacing: -.016em;
+      .st7, .st33 {
+        font-size: 95.4px;
       }
 
-      .cls-10 {
-        font-size: 82.86286px;
+      .st8, .st12, .st13, .st14, .st34 {
+        fill: #f8993a;
       }
 
-      .cls-11 {
-        font-size: 83.11166px;
+      .st9, .st24 {
+        font-size: 87.6px;
       }
 
-      .cls-13 {
-        font-size: 81.68542px;
-        letter-spacing: -.00799em;
+      .st10, .st11 {
+        font-size: 89.7px;
       }
 
-      .cls-14 {
-        font-size: 75.01681px;
+      .st11 {
+        stroke-miterlimit: 9.6;
+        stroke-width: 1px;
       }
 
-      .cls-15 {
-        font-size: 82.7484px;
+      .st13, .st32 {
+        font-size: 98.9px;
+        letter-spacing: 0em;
       }
 
-      .cls-16 {
-        font-size: 81.96907px;
+      .st14, .st30 {
+        font-size: 91.7px;
+        letter-spacing: 0em;
       }
 
-      .cls-17 {
-        font-size: 81.5562px;
+      .st15, .st19 {
+        font-size: 88.8px;
+        letter-spacing: 0em;
       }
 
-      .cls-18 {
-        font-size: 83.0517px;
+      .st16, .st28 {
+        font-size: 89.8px;
       }
 
-      .cls-19 {
-        font-size: 81.9056px;
+      .st18, .st23 {
+        font-size: 88.5px;
       }
 
-      .cls-20 {
-        font-size: 82.81017px;
+      .st20, .st34 {
+        font-size: 94.2px;
       }
 
-      .cls-21 {
-        font-size: 82.97871px;
+      .st21, .st26 {
+        font-size: 91.1px;
       }
 
-      .cls-22 {
-        font-size: 83.1937px;
+      .st24, .st26, .st27, .st28 {
+        fill: #ffcc67;
       }
 
-      .cls-23 {
-        font-size: 78.46066px;
+      .st36 {
+        fill: #fff;
+      }
+
+      .st29, .st31 {
+        font-size: 87.8px;
+      }
+
+      .st30 {
+        stroke-miterlimit: 9.8;
+        stroke-width: 1px;
       }
     </style>
   </defs>
-  <path class="cls-25" d="M657.36621,0c-195,0-353,167-353,373.10001s158,373.10001,353,373.10001,353-167,353-373.10001S852.36621,0,657.36621,0ZM651.06622,612c-133.70001,0-242.10004-109.60001-242.10004-244.79999s108.40002-244.8,242.09998-244.8,242.09998,109.59999,242.09998,244.8-108.40002,244.79999-242.09998,244.79999h.00006Z"/>
-  <path class="cls-12" d="M656.36621,230.8l-17.79999,22.90001-22,28.10001-22,28.10001-22,28-12.79999,16.20001c-4.59998,5.79999-11.29999,7.29999-17.70001,5.70001s-10.09998-6.5-13.5-13.79999c-2.90002-6.20001-3.20001-15.39999-.20001-21.79999,4.20001-9,15.40002-22,22.40002-30.79999l22-28.10001,22-28.10001,22-28.10001,21.29999-27.39999c.90002-1.2,2.5-2.39999,3.40002-3.7,7.70001-11.39999,21-12.2,29.40002-1.60001l11.90002,15.10001,22,28,22,28.10001,22.59998,28.90001,22,28,10.5,13.5c5.20001,6.70001,6.70001,16.60001,4.40002,25.89999-2.09998,8.20001-7.5,15.10001-14.70001,16.89999s-14.09998-1.10001-19.09998-8.20001l-3.59998-4.10001-21.90002-28.20001-22-28.10001-22-28.10001-21-26.89999-5.29999-6.39999-.30011-.00005Z"/>
-  <g class="cls-24">
-    <text class="cls-4" transform="translate(416.52679 245.48008) rotate(-53.16619) scale(.93567 .99946) skewX(2.00996)"><tspan x="0" y="0">L</tspan></text>
-    <text class="cls-20" transform="translate(446.81362 209.06554) rotate(-45.44928) scale(.94317 .99896) skewX(2.76399)"><tspan x="0" y="0">E</tspan></text>
-    <text class="cls-9" transform="translate(483.17732 176.12999) rotate(-36.98168) scale(.95403 .99836) skewX(3.4341)"><tspan x="0" y="0">T</tspan></text>
-    <text class="cls-16" transform="translate(514.78873 149.1681) rotate(-21.96526) scale(.96361 .99794) skewX(3.80853)"><tspan x="0" y="0">’</tspan></text>
-    <text class="cls-17" transform="translate(535.08845 139.26105) rotate(-17.35663) scale(.97372 .99761) skewX(4.05979)"><tspan x="0" y="0">S</tspan></text>
-    <text class="cls-22" transform="translate(413.23022 382.51382) rotate(-47.24581) scale(.93391 .99959) skewX(1.76154)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-2" transform="translate(409.65094 299.63484) rotate(-39.45117) scale(.93594 .99944) skewX(2.04492)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-21" transform="translate(429.51551 220.81739) rotate(-36.63646) scale(.93909 .99922) skewX(2.40038)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-10" transform="translate(400.71873 224.23574) rotate(-34.46139) scale(.94189 .99904) skewX(2.65927)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-11" transform="translate(647.54798 110.53406) rotate(8.0242) scale(.93589 .99945) skewX(2.03794)"><tspan x="0" y="0">E</tspan></text>
-    <text class="cls-15" transform="translate(698.13758 117.72909) rotate(16.45204) scale(.94466 .99887) skewX(2.87816)"><tspan x="0" y="0">X</tspan></text>
-    <text class="cls-7" transform="translate(751.10789 131.55353) rotate(23.74267) scale(.95696 .99822) skewX(3.56582)"><tspan x="0" y="0">P</tspan></text>
-    <text class="cls-13" transform="translate(784.47644 144.66087) rotate(41.07967) scale(.97055 .9977) skewX(3.99434)"><tspan x="0" y="0">L</tspan></text>
-    <text class="cls-23" transform="translate(820.05423 147.69847) rotate(67.454) scale(.96294) skewX(14.72497)"><tspan x="0" y="0">O</tspan></text>
-    <text class="cls-8" transform="translate(850.97551 197.94062) rotate(61.8753) scale(1.02183 .9898) skewX(7.93573)"><tspan x="0" y="0">R</tspan></text>
-    <text class="cls-14" transform="translate(879.32013 240.36017) rotate(72.63455) scale(1.07075 .9883) skewX(8.106)"><tspan x="0" y="0">E</tspan></text>
-    <text class="cls-22" transform="translate(410.88619 303.35147) rotate(-64.04164) scale(.93391 .99959) skewX(1.76154)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-6" transform="translate(413.06786 321.60431) rotate(-40.23018) scale(.98566 .99997) skewX(.4235)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-2" transform="translate(528.40789 229.33723) rotate(-39.45117) scale(.93594 .99944) skewX(2.04492)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-5" transform="translate(594.23231 117.36841) rotate(-10.36062) scale(1.18747 .99664) skewX(-3.94501)"><tspan x="0" y="0">-</tspan></text>
-    <text class="cls-21" transform="translate(429.51551 220.81739) rotate(-36.63646) scale(.93909 .99922) skewX(2.40038)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-10" transform="translate(332.14793 257.69643) rotate(-34.46139) scale(.94189 .99904) skewX(2.65927)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-18" transform="translate(498.34454 643.94935) rotate(30.44957) scale(.93733 .99934) skewX(2.21197)"><tspan x="0" y="0">M</tspan></text>
-    <text/>
-    <text class="cls-1" transform="translate(579.99784 677.07429) rotate(27.84415) scale(.94991 .99857) skewX(3.21884)"><tspan x="0" y="0">O</tspan></text>
-    <text class="cls-19" transform="translate(678.83306 692.35524) rotate(-8.24215) scale(.96516 .99788) skewX(3.85551)"><tspan x="0" y="0">R</tspan></text>
-    <text class="cls-3" transform="translate(760.71746 675.93357) rotate(-31.07352) scale(.98106 .99744) skewX(4.17083)"><tspan x="0" y="0">E</tspan></text>
+  <path class="st35" d="M341.9,28.4C179.2,28.4,47.3,167.5,47.3,339.2s131.9,310.8,294.6,310.8,294.6-139.1,294.6-310.8S504.7,28.4,341.9,28.4ZM336.7,538.2c-111.6,0-202.1-91.3-202.1-203.9s90.5-203.9,202.1-203.9,202.1,91.3,202.1,203.9-90.5,203.9-202.1,203.9h0Z"/>
+  <path class="st36" d="M338.1,205.5l-17.8,23.1-22,28.4-22,28.4-22,28.3-12.8,16.4c-4.6,5.9-11.3,7.4-17.7,5.8s-10.1-6.6-13.5-13.9c-2.9-6.3-3.2-15.5-.2-22,4.2-9.1,15.4-22.2,22.4-31.1l22-28.4,22-28.4,22-28.4,21.3-27.7c.9-1.2,2.5-2.4,3.4-3.7,7.7-11.5,21-12.3,29.4-1.6l11.9,15.2,22,28.3,22,28.4,22.6,29.2,22,28.3,10.5,13.6c5.2,6.8,6.7,16.8,4.4,26.2-2.1,8.3-7.5,15.2-14.7,17.1-7.2,1.8-14.1-1.1-19.1-8.3l-3.6-4.1-21.9-28.5-22-28.4-22-28.4-21-27.2-5.3-6.5h-.3Z"/>
+  <g class="st17">
+    <g class="st17">
+      <g class="st17">
+        <text class="st13" transform="translate(68.3 217.8) rotate(-42.9) scale(.9 1) skewX(11.6)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st32" transform="translate(68.3 217.8) rotate(-42.9) scale(.9 1) skewX(11.6)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st34" transform="translate(104.1 180.1) rotate(-42.1) scale(.9 1) skewX(9.7)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st20" transform="translate(104.1 180.1) rotate(-42.1) scale(.9 1) skewX(9.7)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st14" transform="translate(141.6 144) rotate(-33.8) scale(1) skewX(9.8)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st30" transform="translate(141.6 144) rotate(-33.8) scale(1) skewX(9.8)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st12" transform="translate(179.4 116.4) rotate(-19.7) scale(1 1) skewX(8.2)"><tspan x="0" y="0">’</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st3" transform="translate(179.4 116.4) rotate(-19.7) scale(1 1) skewX(8.2)"><tspan x="0" y="0">’</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st8" transform="translate(198.6 105.8) rotate(-15.5) scale(1.1 1) skewX(7.6)"><tspan x="0" y="0">S</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st1" transform="translate(198.6 105.8) rotate(-15.5) scale(1.1 1) skewX(7.6)"><tspan x="0" y="0">S</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st18" transform="translate(338 75.3) rotate(7.2) scale(1 1) skewX(.3)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st23" transform="translate(338 75.3) rotate(7.2) scale(1 1) skewX(.3)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st0" transform="translate(398.4 82.9) rotate(14.7) scale(1 1) skewX(-.6)"><tspan x="0" y="0">X</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st6" transform="translate(398.4 82.9) rotate(14.7) scale(1 1) skewX(-.6)"><tspan x="0" y="0">X</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st15" transform="translate(461.7 97.6) rotate(21.4) scale(1 1) skewX(-1.2)"><tspan x="0" y="0">P</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st19" transform="translate(461.7 97.6) rotate(21.4) scale(1 1) skewX(-1.2)"><tspan x="0" y="0">P</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st22" transform="translate(501.6 111.6) rotate(37.8) skewX(-2.7)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st2" transform="translate(501.6 111.6) rotate(37.8) skewX(-2.7)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st10" transform="translate(544.1 114.8) rotate(65) scale(.9 1) skewX(9.8)"><tspan x="0" y="0">O</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st11" transform="translate(544.1 114.8) rotate(65) scale(.9 1) skewX(9.8)"><tspan x="0" y="0">O</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st7" transform="translate(581 168.2) rotate(59) scale(1 1) skewX(2.3)"><tspan x="0" y="0">R</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st33" transform="translate(581 168.2) rotate(59) scale(1 1) skewX(2.3)"><tspan x="0" y="0">R</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st29" transform="translate(614.9 213.3) rotate(70.6) scale(1 1) skewX(4.3)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st31" transform="translate(614.9 213.3) rotate(70.6) scale(1 1) skewX(4.3)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st4" transform="translate(268.3 69.5) rotate(-12.2) scale(1.3 1) skewX(-2.2)"><tspan x="0" y="0">-</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st25" transform="translate(268.3 69.5) rotate(-12.2) scale(1.3 1) skewX(-2.2)"><tspan x="0" y="0">-</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st26" transform="translate(159.7 642.6) rotate(27.6) skewX(-3.6)"><tspan x="0" y="0">M</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st21" transform="translate(159.7 642.6) rotate(27.6) skewX(-3.6)"><tspan x="0" y="0">M</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st28" transform="translate(257.3 677.8) rotate(25.2) scale(1 1) skewX(-2.2)"><tspan x="0" y="0">O</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st16" transform="translate(257.3 677.8) rotate(25.2) scale(1 1) skewX(-2.2)"><tspan x="0" y="0">O</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st24" transform="translate(375.4 694.1) rotate(-7.3) scale(1.1 1) skewX(5.6)"><tspan x="0" y="0">R</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st9" transform="translate(375.4 694.1) rotate(-7.3) scale(1.1 1) skewX(5.6)"><tspan x="0" y="0">R</tspan></text>
+      </g>
+    </g>
+    <g class="st17">
+      <g class="st17">
+        <text class="st27" transform="translate(473.2 676.6) rotate(-28.2) scale(1 1) skewX(9.7)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+      <g class="st17">
+        <text class="st5" transform="translate(473.2 676.6) rotate(-28.2) scale(1 1) skewX(9.7)"><tspan x="0" y="0">E</tspan></text>
+      </g>
+    </g>
   </g>
-  <path class="cls-12" d="M662.56622,543.90002l17.09998-23.40002,21.20001-28.70001,21.20001-28.79999,21.20001-28.70001,12.40002-16.60001c4.40002-5.89999,11.09998-7.60001,17.5-6.20001,5.5,1.20001,10.29999,6.20001,13.90002,13.39999,3.09998,6.10001,3.59998,15.20001.79999,21.79999-3.90002,9.10001-14.79999,22.39999-21.5,31.5l-21.20001,28.70001-21.20001,28.79999-21.20001,28.79999-20.5,28c-.90002,1.20001-2.40002,2.5-3.20001,3.79999-7.40002,11.59998-20.70001,12.90002-29.40002,2.5l-12.29999-14.70001-22.70001-27.29999-22.79999-27.40002-23.40002-28.20001-22.70001-27.29999-10.90002-13.20001c-5.40002-6.5-7.20001-16.39999-5.09998-25.70001,1.79999-8.29999,7.09998-15.29999,14.20001-17.29999s14.09998.70001,19.29999,7.60001l3.70001,4,22.70001,27.5,22.79999,27.39999,22.79999,27.40002,21.70001,26.20001,5.5,6.20001.10004-.09991Z"/>
+  <path class="st36" d="M345.9,497.1l16.7-23.1,20.6-28.4,20.6-28.4,20.6-28.3,12-16.4c4.3-5.9,10.6-7.4,16.6-5.8,6,1.6,9.5,6.6,12.7,13.9,2.7,6.3,3,15.5.2,22-3.9,9.1-14.4,22.2-21,31.1l-20.6,28.4-20.6,28.4-20.6,28.4-20,27.7c-.8,1.2-2.3,2.4-3.2,3.7-7.2,11.5-19.7,12.3-27.6,1.6l-11.2-15.2-20.7-28.3-20.7-28.4-21.2-29.2-20.7-28.3-9.9-13.6c-4.9-6.8-6.3-16.8-4.1-26.1,2-8.3,7-15.3,13.8-17.1,6.8-1.8,13.2,1.1,17.9,8.3l3.4,4.1,20.6,28.5,20.7,28.4,20.7,28.4,19.7,27.1,5,6.5h.3Z"/>
 </svg>

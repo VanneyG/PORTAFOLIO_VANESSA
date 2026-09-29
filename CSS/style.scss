@@ -7,7 +7,7 @@ body {
    display:grid ;
         @include partial.layout_mobile( 1fr , 1fr);
         grid-template-areas: "header" "content";
-
+scroll-behavior: smooth;
 
 // Navigation ---------------------------------------------------------------------
 
@@ -17,6 +17,9 @@ header{
   .logo_section{ 
   margin-top: 15px;
   margin-left: 15px;
+
+
+
    
   .logo{
    
@@ -95,15 +98,44 @@ flex-direction: column;
   background-color: #FFFDFA;
   grid-area: content; 
   position: relative;
+  
+/*-----------------------*/
+ .scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 8px;
+  background-color:#003399 ;
+  //color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, transform 0.2s;
 
-   .scroll_icon{
-    text-align: center;
-    .scroll_image{
-        margin-top: 18px;
-         @include partial.image-size(auto, 80px);
-        
-    }
-   }
+  /*  para que el SVG gire suavemente */
+#scrollIcon {
+  transition: transform 0.3s ease;
+  width: 100%;  /* O el tamaño que prefieras para tu SVG */
+  height: 100%;
+}
+
+ 
+}
+.scroll-btn:hover{
+    background-color: #0a0a0a;
+}
+
+
+
+/*-------------------------*/
   .black_circle{
      @include partial.image-size(auto, 30px);
      position: absolute;
@@ -237,7 +269,7 @@ flex-direction: column;
       z-index: 1000; /* Aseguramos que se mantenga en la capa superior */
       margin: 0;   
     }
-
+    #yellow_pink_form{display: none;}
     .nav-links {
       display: none !important; /* Ocultamos la lista nativa de escritorio */
       
@@ -314,6 +346,7 @@ flex-direction: column;
     grid-template-areas: "header content";
 
     header {
+        position:relative;   
         .nav-links {
     display: flex !important;
     position: fixed;
@@ -328,8 +361,6 @@ flex-direction: column;
     display: none !important; /* Destruye visibilidad si pasamos a escritorio */
   }
 
-
-
 .logo_section{ 
   margin-top: 15px;
   margin-left: 17px;
@@ -343,12 +374,22 @@ flex-direction: column;
   } 
 
   } 
+
+  #yellow_pink_form{
+ position: absolute;
+
+ top:90%;
+  }
  
  } 
 
 
  #container{
    
+height: 100%;
+    .scroll-btn{
+        display: none;
+    }
   #container_color{
   
        .logo_color{
@@ -365,9 +406,43 @@ flex-direction: column;
     flex-wrap: nowrap;
     justify-items: center;
     align-content: center;
-    height: 100%;
+    min-height: auto;
    
-    margin-top: 8%;
+    margin-top: 18%;
+
+
+
+     .text{
+       margin-left: 5% ;
+        margin-top: 8%;
+        font-family: 'outfit'; 
+       
+       
+        .hello , .name{ 
+             font-size: 30px; margin-bottom: 12px; }
+        .name,  .uddannelse{color:#003399; font-size: 34px;}
+        .introduction{ margin-top: 25px; font-weight: 500; font-size: 29px; font-family: 'Cormorant-Upright'; margin-left: 10px;
+        margin-bottom: 10px;}
+        .description{font-size: 25px; text-align: center; font-family:'outfit'; margin-bottom: 10px;}
+        .uddannelse{
+            font-size: 34px;
+            font-style:normal;
+            margin-bottom: 19px;
+            text-align: center;
+        }
+
+        .bttn-about{
+            background-color:#003399 ;
+            color: white;
+            text-align: center;
+            padding: 10px  30px 10px 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    } 
 
  
 
@@ -375,7 +450,7 @@ flex-direction: column;
     flex-basis: 60%;
         #profile_photo{
              @include partial.image-size(auto, 500px);
-             margin-top: 20px;
+             margin-top: 40px;
              margin-left: 25px;
              margin-right: 18px;
            

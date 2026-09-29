@@ -43,3 +43,13 @@ window.addEventListener('resize', () => {
 });
 
 /*--------------------------------------*/
+
+// Importamos la clase
+import { ScrollManager } from './data/scroll.js';
+
+// Instanciamos la clase para que empiece a funcionar
+// Si usas los IDs por defecto ('scrollBtn' y 'scrollIcon'), puedes dejarlo vacío:
+const scroll = new ScrollManager();
+
+// Nota: Si tus IDs del HTML fueran diferentes, por ejemplo 'myButton' y 'myIcon', lo llamarías así:
+// const scroll = new ScrollManager('myButton', 'myIcon');

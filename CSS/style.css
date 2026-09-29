@@ -11,6 +11,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "header" "content";
+  scroll-behavior: smooth;
 }
 body header {
   grid-area: header;
@@ -70,14 +71,37 @@ body #container {
   background-color: #FFFDFA;
   grid-area: content;
   position: relative;
+  /*-----------------------*/
 }
-body #container .scroll_icon {
-  text-align: center;
-}
-body #container .scroll_icon .scroll_image {
-  margin-top: 18px;
-  width: auto;
+body #container .scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  width: 80px;
   height: 80px;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #003399;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.2s;
+  /*  para que el SVG gire suavemente */
+}
+body #container .scroll-btn #scrollIcon {
+  transition: transform 0.3s ease;
+  width: 100%; /* O el tamaño que prefieras para tu SVG */
+  height: 100%;
+}
+body #container .scroll-btn:hover {
+  background-color: #0a0a0a;
+}
+body #container {
+  /*-------------------------*/
 }
 body #container .black_circle {
   width: auto;
@@ -201,6 +225,9 @@ body #container .indhold .profile_picture #profile_photo {
     z-index: 1000; /* Aseguramos que se mantenga en la capa superior */
     margin: 0;
   }
+  body header #yellow_pink_form {
+    display: none;
+  }
   body header .nav-links {
     display: none !important; /* Ocultamos la lista nativa de escritorio */
   }
@@ -256,6 +283,9 @@ body #container .indhold .profile_picture #profile_photo {
     grid-template-rows: 1200px;
     grid-template-areas: "header content";
   }
+  body header {
+    position: relative;
+  }
   body header .nav-links {
     display: flex !important;
     position: fixed;
@@ -275,6 +305,16 @@ body #container .indhold .profile_picture #profile_photo {
     width: auto;
     height: 70px;
   }
+  body header #yellow_pink_form {
+    position: absolute;
+    top: 90%;
+  }
+  body #container {
+    height: 100%;
+  }
+  body #container .scroll-btn {
+    display: none;
+  }
   body #container #container_color .logo_color {
     margin-left: 85%;
     margin-top: 50px;
@@ -285,8 +325,52 @@ body #container .indhold .profile_picture #profile_photo {
     flex-wrap: nowrap;
     justify-items: center;
     align-content: center;
-    height: 100%;
+    min-height: auto;
+    margin-top: 18%;
+  }
+  body #container .indhold .text {
+    margin-left: 5%;
     margin-top: 8%;
+    font-family: "outfit";
+  }
+  body #container .indhold .text .hello, body #container .indhold .text .name {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  body #container .indhold .text .name, body #container .indhold .text .uddannelse {
+    color: #003399;
+    font-size: 34px;
+  }
+  body #container .indhold .text .introduction {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 29px;
+    font-family: "Cormorant-Upright";
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  body #container .indhold .text .description {
+    font-size: 25px;
+    text-align: center;
+    font-family: "outfit";
+    margin-bottom: 10px;
+  }
+  body #container .indhold .text .uddannelse {
+    font-size: 34px;
+    font-style: normal;
+    margin-bottom: 19px;
+    text-align: center;
+  }
+  body #container .indhold .text .bttn-about {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   body #container .indhold .profile_picture {
     flex-basis: 60%;
@@ -294,7 +378,7 @@ body #container .indhold .profile_picture #profile_photo {
   body #container .indhold .profile_picture #profile_photo {
     width: auto;
     height: 500px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 25px;
     margin-right: 18px;
   }
