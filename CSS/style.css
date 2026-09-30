@@ -158,12 +158,16 @@ body #container .indhold {
   display: flex;
   flex-direction: column;
 }
+body #container .indhold .text2 .title {
+  justify-self: flex-start;
+  margin-left: 5%;
+}
 body #container .indhold .text2 .description {
   font-size: 18px;
   font-family: "outfit";
   text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 body #container .indhold .text {
   margin-left: 5%;
@@ -279,6 +283,7 @@ body #container .indhold .profile_picture #profile_photo {
     border-radius: 10px;
     font-size: 20px;
     margin-top: 15px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1024px) {

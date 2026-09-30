@@ -42,6 +42,7 @@ export class indhold {
                 </div>
                 
                 <div class="text2">
+                <h2 class="title"><br> About </br></h2>
                   <p class="description">I’m a web designer, excited about creating graphic design, website design , and many more...</p>
                   <input type="button" value="More about me ->" class="bttn-about">
                 </div>

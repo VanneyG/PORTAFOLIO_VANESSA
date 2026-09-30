@@ -204,9 +204,10 @@ justify-items:space-around;
     flex-direction: column;
 
     .text2{
+        .title{ justify-self: flex-start; margin-left: 5%;}
       .description{
         font-size: 18px; font-family: 'outfit'; text-align: center;
-        margin-left: 5px;margin-right: 5px;
+        margin-left: 5%;margin-right: 5%;
       }  
     }
 
@@ -238,6 +239,7 @@ justify-items:space-around;
             margin-top: 15px;
             margin-left: 10px;
             margin-right: 10px;
+            
         }
     } 
 
@@ -338,6 +340,7 @@ justify-items:space-around;
             border-radius: 10px;
             font-size: 20px;
             margin-top: 15px;
+            margin-bottom: 30px;
         }
         }
  
