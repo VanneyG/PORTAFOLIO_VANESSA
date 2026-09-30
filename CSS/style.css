@@ -218,7 +218,7 @@ body #container .indhold .profile_picture #profile_photo {
   margin-top: 20px;
 }
 
-/* media Queries */
+/*-------------------------------------------------------- media Queries  mobile layout ----------------------------- */
 @media (max-width: 1023px) {
   body header .burger-menu {
     display: flex !important;
@@ -286,6 +286,7 @@ body #container .indhold .profile_picture #profile_photo {
     margin-bottom: 30px;
   }
 }
+/*--------------------------------------------media queries  desktop layout--------------------------------*/
 @media (min-width: 1024px) {
   body {
     grid-template-columns: 1fr 4fr;

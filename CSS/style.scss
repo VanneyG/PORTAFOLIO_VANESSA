@@ -262,7 +262,7 @@ justify-items:space-around;
 
 
 
-/* media Queries */
+/*-------------------------------------------------------- media Queries  mobile layout ----------------------------- */
 
 @media(max-width:1023px){
 
@@ -317,9 +317,9 @@ justify-items:space-around;
 
   #container {
    
-    .pink_circle{ display: none;
+    
 
-  }
+    .pink_circle{ display: none; }
 
 
     margin-top: 15px; 
@@ -348,7 +348,7 @@ justify-items:space-around;
 }
 
 
-
+/*--------------------------------------------media queries  desktop layout--------------------------------*/
 
 @media (min-width:1024px) {
   body  {
