@@ -41,10 +41,10 @@ export class indhold {
                   <img src="IMG/SVG/foto_portafolio_withForms.svg" aria-label="PROFILE PHOTO" id="profile_photo">
                 </div>
                 
-                <div class="text2">
+                <div class="text2" id="about">
                 <h2 class="title"><br> About </br></h2>
                   <p class="description">I’m a web designer, excited about creating graphic design, website design , and many more...</p>
-                  <input type="button" value="More about me ->" class="bttn-about">
+                  <input type="button" value="See full CV" class="bttn-about">
                 </div>
             `;
         }

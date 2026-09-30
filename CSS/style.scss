@@ -398,6 +398,8 @@ justify-items:space-around;
  #container{
    position: relative;
 height: 100%;
+
+#services, #portafolio {display:none;}   /* hidding the sections, which should only be visible in the mobile layout */
     .scroll-btn{
         display: none;
     }

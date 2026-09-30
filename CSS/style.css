@@ -322,6 +322,10 @@ body #container .indhold .profile_picture #profile_photo {
     position: relative;
     height: 100%;
   }
+  body #container #services, body #container #portafolio {
+    display: none;
+  }
+  body #container { /* hidding the sections, which should only be visible in the mobile layout */ }
   body #container .scroll-btn {
     display: none;
   }
