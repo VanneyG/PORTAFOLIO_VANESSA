@@ -262,6 +262,34 @@ body #container .indhold .profile_picture #profile_photo {
     font-weight: bold;
     display: block;
   }
+  #container #services {
+    margin-left: 5%;
+    margin-bottom: 25px;
+  }
+  #container #services #listServices {
+    margin-top: 5px;
+    margin-left: 5%;
+  }
+  #container #portafolio .text_ontop_carousel {
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+  #container #portafolio .galery1 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #container #portafolio .galery1 .contenedor_image {
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  #container #portafolio .galery1 .contenedor_image .card {
+    width: auto;
+    height: 200px;
+  }
   #container .pink_circle {
     display: none;
   }
