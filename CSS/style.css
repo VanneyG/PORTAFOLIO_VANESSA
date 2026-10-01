@@ -264,10 +264,25 @@ body #container .indhold .profile_picture #profile_photo {
   }
   #container #services {
     margin-left: 5%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 15px;
+  }
+  #container #services #yellow_figure {
+    position: absolute;
+    width: auto;
+    height: 30px;
+    right: 5%;
   }
   #container #services #listServices {
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  #container #services #listServices .li_indhold {
+    margin-bottom: 10px;
+  }
+  #container #dividingLine {
+    margin-left: 5%;
     margin-left: 5%;
   }
   #container #portafolio .text_ontop_carousel {
@@ -285,6 +300,8 @@ body #container .indhold .profile_picture #profile_photo {
   #container #portafolio .galery1 .contenedor_image {
     margin-bottom: 15px;
     margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   #container #portafolio .galery1 .contenedor_image .card {
     width: auto;

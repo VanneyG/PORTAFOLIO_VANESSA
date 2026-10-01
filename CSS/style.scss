@@ -319,14 +319,26 @@ justify-items:space-around;
 
     #services{
         margin-left: 5%;
-        margin-bottom: 25px ;
+        margin-bottom: 20px ;
+         position: relative;
+         margin-top: 15px ;
+ 
+        #yellow_figure{
+            position: absolute;
+            @include partial.image-size(auto, 30px);
+           right:5%;
+        }
         #listServices{
-            margin-top: 5px;
+            margin-top: 20px;
             margin-left: 5%;
+
+            .li_indhold{
+                margin-bottom: 10px;
+            }
         }
 
     }
-   
+    #dividingLine{margin-left: 5%; margin-left: 5%;}
     #portafolio{
 
         .text_ontop_carousel {margin-left: 5%;margin-top: 15px;}
@@ -342,6 +354,9 @@ justify-items:space-around;
             .contenedor_image{
                  margin-bottom: 15px;
                  margin-top: 5px;
+                 margin-left: 5%;
+                 margin-right: 5%;
+
 
                 .card{
                     @include partial.image-size(auto, 200px);
