@@ -12,3 +12,17 @@
 width:$width ;
 height: $height ;
 }
+
+
+@mixin h2_styling(){
+     font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    
+    font-weight: 500;
+}
+
+@mixin description_styling(){
+     font-size: 18px; font-family: 'outfit';
+        margin-left: 5%;margin-right: 5%;
+        font-weight:lighter;
+}
