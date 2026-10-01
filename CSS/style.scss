@@ -143,13 +143,15 @@ justify-items:space-around;
 
 /*-------------------------*/
   .black_circle{
-     @include partial.image-size(auto, 30px);
+     @include partial.image-size(150px, 40px);
      position: absolute;
      left: 37%;
+     right:.2%;
+     z-index: 2;
   }
 
    .orange_circle{
-     @include partial.image-size(auto, 75px);
+     @include partial.image-size(200px, 100px);
      position: absolute;
      right:0%;
   }
@@ -157,7 +159,7 @@ justify-items:space-around;
  .decoration{
    position:90%;
    overflow-x: hidden;
-   
+
 
  }
  
