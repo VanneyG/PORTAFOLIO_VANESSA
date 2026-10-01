@@ -102,6 +102,8 @@ justify-items:space-around;
   background-color: #FFFDFA;
   grid-area: content; 
  position: relative;
+
+ 
   
 /*-----------------------*/
  .scroll-btn {
@@ -152,13 +154,13 @@ justify-items:space-around;
      right:0%;
   }
 
-
-  .pink_yellow{
+ .decoration{
+   position:90%;
+   overflow-x: hidden;
    
-    position:absolute;
-    top:95%;
 
-  }
+ }
+ 
 
   #container_color {
     position: relative; /* Contenedor de referencia para la lista absoluta */
@@ -291,6 +293,8 @@ justify-items:space-around;
         justify-self: flex-start;
 }
 }
+  
+
 
 
   }

@@ -116,9 +116,9 @@ body #container .orange_circle {
   position: absolute;
   right: 0%;
 }
-body #container .pink_yellow {
-  position: absolute;
-  top: 95%;
+body #container .decoration {
+  position: 90%;
+  overflow-x: hidden;
 }
 body #container #container_color {
   position: relative; /* Contenedor de referencia para la lista absoluta */
