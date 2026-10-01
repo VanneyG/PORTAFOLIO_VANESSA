@@ -8,7 +8,7 @@ body {
         @include partial.layout_mobile( 1fr , 1fr);
         grid-template-areas: "header" "content";
 scroll-behavior: smooth;
-       
+       width:100%;
 
 
 // Navigation ---------------------------------------------------------------------
@@ -102,7 +102,7 @@ justify-items:space-around;
   background-color: #FFFDFA;
   grid-area: content; 
  position: relative;
-
+width:100%;
  
   
 /*-----------------------*/
@@ -167,11 +167,11 @@ justify-items:space-around;
   #container_color {
     position: relative; /* Contenedor de referencia para la lista absoluta */
     display: block;    /* Asegura que tome el flujo correcto en tu layout */
-   // background-color: #FFFDFA; /* Tu color inicial del contenedor */
+  
 
     .logo_color {
       @include partial.image-size(auto, 40px);
-      margin-left: 80%;
+      margin-left: 70%;
       margin-top: 50px;
       cursor: pointer;
       
@@ -395,7 +395,8 @@ justify-items:space-around;
 
 
     #dividingLine{margin-left: 5%; margin-left: 5%;}
-    #portafolio{
+    
+    #portafolio ,#portafolio2{
 
         .text_ontop_carousel {margin-top: 15px;
          margin-left: 5%; 
@@ -670,15 +671,58 @@ input {
 height: 100%;
 
 #services, #portafolio ,#dividingLine, #contact ,.pink_yellow{display:none;}   /* hidding the sections, which should only be visible in the mobile layout */
-    .scroll-btn{
-        display: none;
+   // .scroll-btn{ display: none;}
+
+     #portafolio2{
+
+        .text_ontop_carousel {margin-top: 15px;
+         margin-left: 5%; 
+         @include partial.h2_styling;
+        justify-self: flex-start;
+        }
+
+        .galery1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-items: space-around;
+            align-content: center;
+            flex-wrap: wrap;
+
+            .contenedor_image{
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+               
+                 margin-bottom: 15px;
+                 margin-top: 5px;
+                 margin-left: 5%;
+                 margin-right: 5%;
+                 
+
+                .p{
+                    margin-top: 15px;
+                    @include partial.description_styling();
+                    font-size: 25px;
+                }
+                .card{
+                   // @include partial.image-size(auto, 200px);
+                   width:60%;
+                    justify-self:center;
+                     margin-left: 5vw;
+                }
+            }
+        }
     }
+
   #container_color{
   
        .logo_color{
        
          margin-left: 85% ;
          margin-top: 50px;
+         height: 60px;
        
           } 
         }
@@ -706,7 +750,8 @@ height: 100%;
         .name,  .uddannelse{color:#003399; font-size: 34px;}
         .introduction{ margin-top: 25px; font-weight: 500; font-size: 29px; font-family: 'Cormorant-Upright'; margin-left: 10px;
         margin-bottom: 10px;}
-        .description{font-size: 25px; text-align: center; font-family:'outfit'; margin-bottom: 10px;}
+        .description{font-size: 25px; text-align: center; font-family:'outfit'; margin-bottom: 10px;
+        display: flex; flex-wrap: wrap;}
         .uddannelse{
             font-size: 34px;
             font-style:normal;

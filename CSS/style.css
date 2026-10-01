@@ -12,6 +12,7 @@ body {
   grid-template-rows: 1fr;
   grid-template-areas: "header" "content";
   scroll-behavior: smooth;
+  width: 100%;
 }
 body header {
   grid-area: header;
@@ -72,6 +73,7 @@ body #container {
   background-color: #FFFDFA;
   grid-area: content;
   position: relative;
+  width: 100%;
   /*-----------------------*/
 }
 body #container .scroll-btn {
@@ -129,7 +131,7 @@ body #container #container_color {
 body #container #container_color .logo_color {
   width: auto;
   height: 40px;
-  margin-left: 80%;
+  margin-left: 70%;
   margin-top: 50px;
   cursor: pointer;
   display: block; /* Evita espacios extra debajo de las imágenes */
@@ -330,7 +332,7 @@ body #container #contact .footer-header h2 {
     margin-left: 5%;
     margin-left: 5%;
   }
-  #container #portafolio .text_ontop_carousel {
+  #container #portafolio .text_ontop_carousel, #container #portafolio2 .text_ontop_carousel {
     margin-top: 15px;
     margin-left: 5%;
     font-family: "Georgia", serif;
@@ -338,7 +340,7 @@ body #container #contact .footer-header h2 {
     font-weight: 500;
     justify-self: flex-start;
   }
-  #container #portafolio .galery1 {
+  #container #portafolio .galery1, #container #portafolio2 .galery1 {
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -346,13 +348,13 @@ body #container #contact .footer-header h2 {
     align-items: center;
     flex-wrap: wrap;
   }
-  #container #portafolio .galery1 .contenedor_image {
+  #container #portafolio .galery1 .contenedor_image, #container #portafolio2 .galery1 .contenedor_image {
     margin-bottom: 15px;
     margin-top: 5px;
     margin-left: 5%;
     margin-right: 5%;
   }
-  #container #portafolio .galery1 .contenedor_image .p {
+  #container #portafolio .galery1 .contenedor_image .p, #container #portafolio2 .galery1 .contenedor_image .p {
     margin-top: 5px;
     font-size: 18px;
     font-family: "outfit";
@@ -360,7 +362,7 @@ body #container #contact .footer-header h2 {
     margin-right: 5%;
     font-weight: lighter;
   }
-  #container #portafolio .galery1 .contenedor_image .card {
+  #container #portafolio .galery1 .contenedor_image .card, #container #portafolio2 .galery1 .contenedor_image .card {
     width: auto;
     height: 200px;
     justify-self: center;
@@ -549,12 +551,50 @@ body #container #contact .footer-header h2 {
     display: none;
   }
   body #container { /* hidding the sections, which should only be visible in the mobile layout */ }
-  body #container .scroll-btn {
-    display: none;
+  body #container #portafolio2 .text_ontop_carousel {
+    margin-top: 15px;
+    margin-left: 5%;
+    font-family: "Georgia", serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    justify-self: flex-start;
+  }
+  body #container #portafolio2 .galery1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  body #container #portafolio2 .galery1 .contenedor_image {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  body #container #portafolio2 .galery1 .contenedor_image .p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: "outfit";
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: lighter;
+    font-size: 25px;
+  }
+  body #container #portafolio2 .galery1 .contenedor_image .card {
+    width: 60%;
+    justify-self: center;
+    margin-left: 5vw;
   }
   body #container #container_color .logo_color {
     margin-left: 85%;
     margin-top: 50px;
+    height: 60px;
   }
   body #container .indhold {
     display: flex;
@@ -591,6 +631,8 @@ body #container #contact .footer-header h2 {
     text-align: center;
     font-family: "outfit";
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
   body #container .indhold .text .uddannelse {
     font-size: 34px;
