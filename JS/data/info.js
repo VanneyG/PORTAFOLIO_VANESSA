@@ -18,8 +18,17 @@ export function setupDynamicBurgerMenu() {
             // Clona la lista original (con sus li y enlaces a)
             dynamicMenu = originalNavLinks.cloneNode(true);
 
+
             // Forzamos el ID único para que apliquen los estilos CSS
             dynamicMenu.id = 'dynamic-burger-menu';
+
+            // to close the menu 
+            const menuLinks = dynamicMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    dynamicMenu.remove(); // Remueve el menú inmediatamente al hacer clic
+                });
+            });
 
             // Insertamos el elemento clonado justo después del botón
             burgerBtn.after(dynamicMenu);

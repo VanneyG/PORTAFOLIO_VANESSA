@@ -23,15 +23,16 @@ export class links {
 
         if (window.innerWidth >= 1024) {
 
-            homeLink.href = "index.html ";
-            aboutLink.href = "about.html ";
-            servicesLink.href = "services.html ";
-            portafolioLink.href = "portafolio.html ";
+            homeLink.href = "index.html";
+            aboutLink.href = "about.html";
+            servicesLink.href = "services.html";
+            portafolioLink.href = "portafolio.html";
             contactLink.href = "contact.html";
-        } else {
-            homeLink.href = "# ";
+        }
+        if (window.innerWidth < 1024) {
+            homeLink.href = "#";
             aboutLink.href = "#about";
-            servicesLink.href = "#services ";
+            servicesLink.href = "#services";
             portafolioLink.href = "#portafolio";
             contactLink.href = "#contact ";
 

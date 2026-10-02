@@ -30,7 +30,7 @@ window.addEventListener('resize', () => {
     seccionPrincipal.screen();
 });
 
-/*--------------------------------*/
+/*--------------------------CHANGING LINKS DEPENDIING ON THE WINDOW WIDTH------*/
 
 const misLinks = new links('home', 'about', 'services', 'portafolio', 'contact');
 
