@@ -1,0 +1,28 @@
+on:
+  workflow_dispatch:
+    inputs:
+      trig-dry-run:
+        description: Don't do anything real
+        required: false
+        default: false
+        type: boolean
+
+name: Deploy website on user request
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+
+      - name: Push files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: linux208.unoeuro.com
+          server-dir: public_html/portfolio/
+          username: vanessa-nf.dk
+          password: ${{ secrets.ftp_password }}
+          dry-run: ${{ inputs.trig-dry-run }}
