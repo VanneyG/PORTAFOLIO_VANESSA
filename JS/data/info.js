@@ -1,10 +1,13 @@
 
 // burger menu
+
+
+
 export function setupDynamicBurgerMenu() {
     const burgerBtn = document.getElementById('burger-btn');
     const originalNavLinks = document.querySelector('.nav-links');
 
-    if (!burgerBtn || !originalNavLinks) return;
+    if (!burgerBtn) return;
 
     burgerBtn.addEventListener('click', (e) => {
         // Evita cualquier comportamiento heredado del click
@@ -34,7 +37,11 @@ export function setupDynamicBurgerMenu() {
             burgerBtn.after(dynamicMenu);
         }
     });
+
+
 }
+
+
 
 
 
